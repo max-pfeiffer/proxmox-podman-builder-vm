@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/max-pfeiffer/proxmox-podman-builder-vm/compare/v0.1.1...v0.1.2) (2026-07-04)
+
+
+### Features
+
+* made vm_vlan_id optional ([b54a250](https://github.com/max-pfeiffer/proxmox-podman-builder-vm/commit/b54a2507481e9932b73714c95f020b1baab763da))
+
 ## [0.1.1](https://github.com/max-pfeiffer/proxmox-podman-builder-vm/compare/v0.1.0...v0.1.1) (2026-07-04)
 
 
