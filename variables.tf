@@ -49,7 +49,9 @@ variable "vm_bridge" {
 }
 
 variable "vm_vlan_id" {
-  type = number
+  description = "Optional VLAN tag for the network device, no VLAN tag is set by default"
+  type        = number
+  default     = null
 }
 
 variable "vm_ip_address" {
