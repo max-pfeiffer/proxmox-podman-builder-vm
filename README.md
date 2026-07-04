@@ -51,9 +51,9 @@ cp configuration.auto.tfvars.example configuration.auto.tfvars
 
 `configuration.auto.tfvars` is git-ignored because it contains the API token.
 The template covers all required variables: the Proxmox connection, the VM
-network settings (`vm_vlan_id`, `vm_ip_address`, `vm_gateway`,
-`vm_dns_servers`) and the SSH keys (`ssh_authorized_key_files`,
-`ssh_private_key_file`).
+network settings (`vm_ip_address`, `vm_gateway`, `vm_dns_servers`) and the
+SSH keys (`ssh_authorized_key_files`, `ssh_private_key_file`). If the VM
+needs a VLAN tag on its network device, set the optional `vm_vlan_id`.
 
 All remaining settings are optional and have defaults, see
 [variables.tf](variables.tf):
@@ -67,6 +67,7 @@ All remaining settings are optional and have defaults, see
 | `vm_disk_size` | `50`             | Disk size in GB                   |
 | `vm_datastore` | `local-lvm`      | Datastore for disk and cloud-init |
 | `vm_bridge`    | `vmbr0`          | Network bridge                    |
+| `vm_vlan_id`   | unset            | VLAN tag for the network device   |
 | `vm_username`  | `builder`        | User created on the VM            |
 
 ## Usage
