@@ -1,0 +1,14 @@
+# Proxmox
+endpoint  = "https://192.168.1.100:8006"
+api_token = "YOUR-API-Token"
+node_name = "YOUR-NODE-NAME"
+
+# VM
+vm_vlan_id     = 1
+vm_ip_address  = "192.168.1.20/24"
+vm_gateway     = "192.168.1.1"
+vm_dns_servers = ["192.168.1.1"]
+
+## SSH Keys
+ssh_authorized_key_files = ["~/.ssh/podman_builder_ed25519.pub", "~/.ssh/id_ed25519.pub"]
+ssh_private_key_file     = "~/.ssh/podman_builder_ed25519"
